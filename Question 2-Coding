@@ -1,0 +1,66 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class LabtestQ2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int mark0,mark1,mark2;
+		double avg;
+		
+		System.out.println("Enter the marks for student 1: ");
+		mark0 = scan.nextInt();
+		
+		if(mark0 > 100 || mark0 < 0) {
+			System.out.println("Invalid input, try again...\n");
+			System.out.println("Enter the marks for student 1: ");
+			mark0 = scan.nextInt();
+		}
+		
+		else {
+			System.out.println();
+		}
+		
+		System.out.println("Enter the marks for student 2: ");
+		mark1 = scan.nextInt();
+		
+		if(mark1 > 100 || mark1 < 0) {
+			System.out.println("Invalid input, try again...\n");
+			System.out.println("Enter the marks for student 2: ");
+			mark1 = scan.nextInt();
+			
+			if(mark1 > 100 || mark1 < 0) {
+				System.out.println("Invalid input, try again...\n");
+				System.out.println("Enter the marks for student 2: ");
+				mark1 = scan.nextInt();
+			}
+			else {
+				System.out.println();
+			}
+		}
+		
+		else {
+			System.out.println();
+		}
+		
+		System.out.println("Enter the marks for student 3: ");
+		mark2 = scan.nextInt();
+		
+		if(mark2 > 100 || mark2 < 0) {
+			System.out.println("Invalid input, try again...\n");
+			System.out.println("Enter the marks for student 3: ");
+			mark2 = scan.nextInt();
+		}
+		
+		else {
+			System.out.println();
+		}
+		
+		avg = (double)(mark0 + mark1 + mark2) / 3;
+		System.out.printf("\nThe average is:%.2f ",avg);
+	}
+
+}
