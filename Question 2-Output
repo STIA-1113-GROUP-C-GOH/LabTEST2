@@ -1,0 +1,18 @@
+Enter the marks for student 1: 
+56
+
+Enter the marks for student 2: 
+101
+Invalid input, try again...
+
+Enter the marks for student 2: 
+-1
+Invalid input, try again...
+
+Enter the marks for student 2: 
+99
+Enter the marks for student 3: 
+45
+
+
+The average is:66.67 
